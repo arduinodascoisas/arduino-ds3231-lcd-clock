@@ -1,22 +1,28 @@
 🕒 Guia Passo a Passo: Relógio Digital Avançado com Arduino
+-
 Este guia ilustrado foi desenvolvido para orientar a montagem, conexão e programação do Relógio Digital Avançado. Siga os passos sequenciais para implementar o sistema com calendário inteligente, termômetro e alarme estroboscópico.
----
+
 🖼️ Página 1: Visão Geral do Projeto
+-
 O Relógio Digital Avançado é um sistema embarcado de alta precisão que utiliza uma arquitetura modular para gerenciar tempo, alertas e leitura de sensores sem travar o processador.
 Recursos Principais
 Abertura rolante Não Bloqueante: Inicialização fluida controlada por `millis()`.
-Teclado Estabilizado: Filtro digital por sobre-amostragem na porta analógica `A0`.
+Teclado Estabilizado: Filtro digital por sobreamostragem na porta analógica `A0`.
 Menu Inteligente: Ajuste dinâmico com Modo Turbo e validação automática de anos bissextos.
 Alarme Estroboscópico: Alerta visual piscante por backlight com interrupção global.
+
 ---
 📦 Página 2: Materiais Necessários
+-
 Para montar este projeto, você precisará dos seguintes componentes eletrônicos:
 Placa Arduino Uno ou Mega (x1): Unidade central de processamento.
 LCD Keypad Shield 16x2 (x1): Módulo de exibição com 5 botões analógicos integrados.
 Módulo RTC DS3231 (x1): Relógio de Tempo Real de alta precisão com sensor de temperatura I2C integrado.
 Cabos Jumper Macho-Fêmea (x4): Para a comunicação do módulo RTC.
+
 ---
 🛠️ Página 3: Montagem Mecânica do Hardware
+-
 A montagem física deste projeto é extremamente limpa, pois a tela elimina a necessidade de uma protoboard para os botões.
 
 Passo 1: Acoplamento do Shield
@@ -28,6 +34,7 @@ Conecte os 4 cabos jumper fêmea diretamente nesses pinos.
 
 ---
 🔌 Página 4: Diagrama de Conexões Elétricas
+-
 O módulo RTC se comunica com o Arduino através do protocolo I2C, compartilhando o barramento de dados com o display de forma transparente.
 Tabela de Mapeamento de Fios
 Pino Módulo RTC DS3231	Pino no Arduino / LCD Shield	Função Eletrônica
@@ -53,7 +60,9 @@ SCL	SCL / Pino Analógico A5	Linha de Clock Serial I2C
        |   VCC GND SDA SCL |
        +-------------------+
 ```
+---
 💻 Página 5: Organização do Código na IDE
+-
 Para garantir que o código funcione corretamente, a arquitetura foi dividida de forma modular em três abas independentes dentro da IDE do Arduino.
 Estrutura de Arquivos da Pasta `Relogio\_LCD\_advanced`
 

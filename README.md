@@ -73,12 +73,10 @@ Relogio_LCD_advanced/
 ```
 
 ### Instruções para Gravação
-
-1. Crie uma pasta no seu computador chamada exatamente `Relogio\_LCD\_advanced`.
-2. Insira os códigos de cada aba em arquivos separados com suas respectivas extensões dentro dessa pasta.
-3. Abra o arquivo `.ino` principal na **IDE do Arduino**.
-4. Acesse o *Gerenciador de Bibliotecas* e instale a biblioteca **RTClib** da Adafruit.
-5. Selecione a porta **COM** correspondente e clique em **Carregar (Upload)**.
+1. Baixe este repositório (clique no botão verde **Code** > **Download ZIP**) e extraia os arquivos no seu computador.
+2. Abra a pasta `Relogio_LCD_advanced` e dê um duplo clique no arquivo principal `Relogio_LCD_advanced.ino` para abri-lo na **IDE do Arduino** (as outras duas abas carregarão automaticamente).
+3. Acesse o *Gerenciador de Bibliotecas* e instale a biblioteca **RTClib** da Adafruit.
+4. Selecione a placa e a porta **COM** correspondentes e clique em **Carregar (Upload)**.
 
 ## 🏆 Página 6: Guia de Operação e Testes
 
